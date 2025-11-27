@@ -1,21 +1,11 @@
 #' Resumen de una ciudad
 #'
-#' Esta función devuelve un resumen con la poblacin, superficie y
-#' densidad poblacional de una ciudad especifica.
+#' Devuelve un resumen con poblacion, superficie y densidad
+#' para la ciudad indicada.
 #'
-#' @param nombre_ciudad Cadena de texto con el nombre de la ciudad.
+#' @param nombre_ciudad Nombre de la ciudad (texto).
 #'
-#' @return Un tibble de una fila con columnas: ciudad, poblacion,
-#' superficie y densidad.
-#'
-#' @examples
-#' # Ciudad valida
-#' resumen_ciudad("Rosario")
-#'
-#' # Ciudad inexistente (generara error)
-#' \dontrun{
-#' resumen_ciudad("Atlantis")
-#' }
+#' @return Tibble de una fila con ciudad, poblacion, superficie y densidad.
 #'
 #' @export
 resumen_ciudad <- function(nombre_ciudad) {
@@ -35,13 +25,13 @@ resumen_ciudad <- function(nombre_ciudad) {
   }
 
   # calcular densidad
-  densidad <- df$poblacion / df$superficie
+  densidad <- df$poblacion / df$superficie_km2
 
-  # devolver tibble de una fila
+  # devolver una fila
   tibble::tibble(
     ciudad = nombre_ciudad,
     poblacion = df$poblacion,
-    superficie = df$superficie,
+    superficie = df$superficie_km2,
     densidad = densidad
   )
 }
