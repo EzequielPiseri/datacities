@@ -1,0 +1,9 @@
+pandoc: 3.1.11
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  datacities: datacities.html
+last_built: 2025-11-27T17:38Z
+urls:
+  reference: https://ezequielpiseri.github.io/datacities/reference
+  article: https://ezequielpiseri.github.io/datacities/articles
