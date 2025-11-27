@@ -1,9 +1,9 @@
 Package: datacities
-Title: What the Package Does (One Line, Title Case)
+Title: Paquete de Visualizacion de Ciudades
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Ezequiel", "Piseri", , "ezequielpiseri@gmail.com", role = c("aut", "cre"))
+Description: Paquete de visualizacion de ciudades que permita cargar, explorar y analizar datos simples de ciudades (poblacion, superficie y region).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
@@ -11,3 +11,17 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 URL: https://github.com/EzequielPiseri/datacities
 BugReports: https://github.com/EzequielPiseri/datacities/issues
+Imports:
+    dplyr,
+    ggplot2,
+    readr,
+    tidyr,
+    cli,
+    lubridate
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Depends: 
+    R (>= 3.5)
+LazyData: true
