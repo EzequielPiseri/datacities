@@ -4,8 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Ezequiel", "Piseri", , "ezequielpiseri@gmail.com", role = c("aut", "cre"))
 Description: Paquete de visualizacion de ciudades que permita cargar, explorar y analizar datos simples de ciudades (poblacion, superficie y region).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
@@ -13,12 +12,10 @@ URL: https://github.com/EzequielPiseri/datacities, https://ezequielpiseri.github
 BugReports: https://github.com/EzequielPiseri/datacities/issues
 Imports:
     dplyr,
-    ggplot2,
-    readr,
-    tidyr,
-    cli,
-    lubridate
+    tibble,
+    cli
 Suggests: 
+    ggplot2,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)

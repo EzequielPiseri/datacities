@@ -7,23 +7,12 @@
 resumen_ciudad(nombre_ciudad)
 }
 \arguments{
-\item{nombre_ciudad}{Cadena de texto con el nombre de la ciudad.}
+\item{nombre_ciudad}{Nombre de la ciudad (texto).}
 }
 \value{
-Un tibble de una fila con columnas: ciudad, poblacion,
-superficie y densidad.
+Tibble de una fila con ciudad, poblacion, superficie y densidad.
 }
 \description{
-Esta función devuelve un resumen con la poblacin, superficie y
-densidad poblacional de una ciudad especifica.
-}
-\examples{
-# Ciudad valida
-resumen_ciudad("Rosario")
-
-# Ciudad inexistente (generara error)
-\dontrun{
-resumen_ciudad("Atlantis")
-}
-
+Devuelve un resumen con poblacion, superficie y densidad
+para la ciudad indicada.
 }
