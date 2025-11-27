@@ -25,10 +25,10 @@ densidad.
 ``` r
 # Ciudad valida
 resumen_ciudad("Rosario")
-#> Warning: Unknown or uninitialised column: `superficie`.
-#> Warning: Unknown or uninitialised column: `superficie`.
-#> # A tibble: 0 × 3
-#> # ℹ 3 variables: ciudad <chr>, poblacion <dbl>, densidad <dbl>
+#> # A tibble: 1 × 4
+#>   ciudad  poblacion superficie densidad
+#>   <chr>       <dbl>      <dbl>    <dbl>
+#> 1 Rosario    948312        178    5328.
 
 # Ciudad inexistente (generara error)
 if (FALSE) { # \dontrun{
